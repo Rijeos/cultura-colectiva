@@ -1,0 +1,7 @@
+navbar
+textarea(froala='', ng-model='vm.articulo.contenido' name='contenido')
+h3 Rendered Content:
+.fr-view(ng-bind-html='vm.articulo.contenido')
+p '#{contenido}'			
+button(ng-click='save()') Enviar
+	
