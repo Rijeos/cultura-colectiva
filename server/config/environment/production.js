@@ -6,19 +6,18 @@ module.exports = {
   // Server IP
   ip:     process.env.OPENSHIFT_NODEJS_IP ||
           process.env.IP ||
-          undefined,
+          108.168.213.75,
 
   // Server port
   port:   process.env.OPENSHIFT_NODEJS_PORT ||
           process.env.PORT ||
-          8080,
+          17685,
 
-  sequelize: {
-    uri:  process.env.SEQUELIZE_URI ||
-          'sqlite://',
+  sequelize: {   
+    user:'cc',
+    password:'CC-dvlpmnt',
     options: {
-      logging: false,
-      storage: 'dist.sqlite',
+      logging: false,      
       define: {
         timestamps: false
       }
